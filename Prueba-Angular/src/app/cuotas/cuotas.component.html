@@ -1,0 +1,9 @@
+<!-- cuotas.component.html -->
+<div *ngFor="let e of Formulario.cuota; let index = index">
+    <p>Cuota {{ index + 1 }}:</p>
+    <ul>
+      <li>Cuota: {{ e.cuota }}</li>
+      <li>Pago: {{ e.pago }}</li>
+    </ul>
+  </div>
+  

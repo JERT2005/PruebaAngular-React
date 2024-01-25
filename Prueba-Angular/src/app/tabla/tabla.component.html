@@ -1,0 +1,24 @@
+<!-- tabla.component.html -->
+<table>
+    <thead>
+      <tr>
+        <th>Eliminar</th>
+        <th>Id</th>
+        <th>Total</th>
+        <th>Cuotas</th>
+        <th>Plazo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of Formulario.tabla; let index = index">
+        <td>
+          <button (click)="EliminarRegistro(index)">Eliminar</button>
+        </td>
+        <td>{{ item.Id }}</td>
+        <td>{{ item.Total }}</td>
+        <td>{{ item.Cuotas }}</td>
+        <td>{{ item.Plazo }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

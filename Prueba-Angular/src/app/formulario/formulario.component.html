@@ -1,0 +1,41 @@
+<!-- formulario.component.html -->
+<form (ngSubmit)="Enviar()">
+    <label for="Id">Digite el Id</label>
+    <input
+      type="text"
+      id="Id"
+      name="Id"
+      [(ngModel)]="formulario.totalVenta.Id"
+      (ngModelChange)="CalcularCuotas()"
+      required
+    />
+    <label for="Total">Digite el monto total</label>
+    <input
+      type="number"
+      id="Total"
+      name="Total"
+      [(ngModel)]="formulario.totalVenta.Total"
+      (ngModelChange)="CalcularCuotas()"
+      required
+    />
+    <label for="Plazo">Digite el plazo</label>
+    <input
+      type="number"
+      id="Plazo"
+      name="Plazo"
+      [(ngModel)]="formulario.totalVenta.Plazo"
+
+      required
+    />
+    <label for="Cuotas">Digite la cuota</label>
+    <input
+      type="number"
+      id="Cuotas"
+      name="Cuotas"
+      [(ngModel)]="formulario.totalVenta.Cuotas"
+      (ngModelChange)="CalcularCuotas()"
+      required
+    />
+    <button type="submit">Guardar</button>
+  </form>
+  
