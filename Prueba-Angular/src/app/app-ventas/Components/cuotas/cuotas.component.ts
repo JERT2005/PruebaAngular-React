@@ -1,6 +1,6 @@
 // cuotas.component.ts
 import { Component } from '@angular/core';
-import { FormService } from '../form.service';
+import { FormService } from '../../../form.service';
 import { NgFor } from '@angular/common';
 
 
