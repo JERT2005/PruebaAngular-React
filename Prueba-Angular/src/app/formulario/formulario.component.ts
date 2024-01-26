@@ -15,7 +15,7 @@ export class FormularioComponent {
 
   Enviar(): void {
     this.formulario.tabla.push({ ...this.formulario.totalVenta });
-    this.formulario.totalVenta = { Id: '', Total: 0, Cuotas: 0, Plazo: 0 };
+    this.formulario.totalVenta = { Id: '', Total: Number, Cuotas: Number, Plazo: Number };
     this.formulario.cuota = []
   }
 

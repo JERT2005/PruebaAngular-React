@@ -8,9 +8,9 @@ export class FormService {
   constructor() { }
   totalVenta: any = {
     Id: '',
-    Total: 0,
-    Cuotas: 0,
-    Plazo: 0,
+    Total: Number,
+    Cuotas: Number,
+    Plazo: Number,
   };
   tabla: any[] = [];
   cuota: any[] = [];
